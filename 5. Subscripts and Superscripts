@@ -1,0 +1,7 @@
+\documentclass{article}
+% The package "fixltx2e" is used to show subscripts and superscripts
+\usepackage{fixltx2e}  
+\begin{document}
+    A\textsubscript{subscript} \\
+    A\textsuperscript{superscript}
+\end{document}
