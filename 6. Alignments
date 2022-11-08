@@ -1,0 +1,21 @@
+\documentclass{article}
+\begin{document}
+    \section{Flush Left}
+    \begin{flushleft}
+        This sentence is aligned to the very left of the document.
+    \end{flushleft}
+
+    \section{Normal Alignment}
+    There is no command for normal alignment.
+    This is an automatic process.
+
+    \section{Center Alignment}
+    \begin{center}
+        This sentence is aligned to the center of the document.
+    \end{center}
+
+    \section{Flush Right}
+    \begin{flushright}
+        This sentence is aligned to the very right of the document.
+    \end{flushright}
+\end{document}
