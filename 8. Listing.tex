@@ -1,0 +1,109 @@
+\documentclass{article}
+% ===================================================================
+% DO NOT USE "enumitem" AND "paralist" PACKAGE TOGETHER, USE ONLY ONE
+% ===================================================================
+
+% "enumitem" package is used for alphabetic list
+% \usepackage{enumitem}
+% "paralist" package is used for listing within a paragraph
+% or we can say for horizontal listing
+\usepackage{paralist}
+
+\begin{document}
+
+\section{Bullet Points}
+% For bullet points, use "itemize". Each "\item" rendered into
+% a bullet point
+\begin{itemize}
+    \item First bullet point
+    \item Second bullet point
+    \item Third bullet point
+\end{itemize}
+
+\section{Numbered List}
+% For numbered list, use "enumerate". Each "\item" rendered into
+% a numbered point
+\begin{enumerate}
+    \item First number
+    \item Second number
+    \item Third number
+\end{enumerate}
+
+\section{Alphabetic List}
+
+\subsection{Lower case}
+% the optional argument "label=\alph*." is used for alphabetic list
+% containing lower case alphabets and a dot "." after the alphabet.
+% if we remove the dot "." from "label=\alph*." then, no dot will be
+% after the lower case alphabet.
+\begin{enumerate}[label=\alph*.]
+    \item Alphabetic first item
+    \item Alphabetic second item
+    \item Alphabetic third item
+\end{enumerate}
+
+\subsection{Upper case}
+% the optional argument "label=\Alph*." is used for alphabetic list
+% containing upper case alphabets and a dot "." after the alphabet.
+% if we remove the dot "." from "label=\Alph*." then, no dot will be
+% after the upper case alphabet.
+\begin{enumerate}[label=\Alph*.]
+    \item Capital alphabetic first item
+    \item Capital alphabetic second item
+    \item Capital alphabetic third item
+\end{enumerate}
+
+\section{Roman List}
+
+\subsection{Lower case}
+% the optional argument "label=\roman*." is used for roman numbered 
+% list containing lower case roman numbers and a dot "." after the number.
+%if we remove the dot "." from "label=\roman*." then, no dot will be
+% after the lower case roman number.
+\begin{enumerate}[label=\roman*.]
+    \item Roman first item
+    \item Roman second item
+    \item Roman third item
+\end{enumerate}
+
+\subsection{Upper case}
+% the optional argument "label=\Roman*." is used for roman numbered list
+% containing upper case roman numbers and a dot "." after the number.
+% if we remove the dot "." from "label=\Roman*." then, no dot will be
+% after the upper case roman number.
+\begin{enumerate}[label=\Roman*.]
+    \item Capital roman first item
+    \item Capital roman second item
+    \item Capital roman third item
+\end{enumerate}
+
+\section{Changing the list ordering}
+% the optional argument "start=3" is used to change the default order
+% of the list and start the list from 3. We can provide any number to
+% the "start=" argument.
+\begin{enumerate}[start=3]
+    \item Third number
+    \item Fourth number
+    \item Fifth number
+\end{enumerate}
+
+\section{Listing in paragraphs}
+
+\subsection{default}
+\begin{inparaenum}
+    \item First item
+    \item Second item
+    \item Third item
+\end{imparaenum}
+
+\subsection{with optional argument}
+% the optional argument "[a)]" is used for the a) b) c) d) ..... pattern
+% in the horizontal list. In default (without providing optional argument),
+% it will list with 1. 2. 3. ... pattern that we can see above
+\begin{inparaenum}[a)]
+    \item First item
+    \item Second item
+    \item Third item
+\end{inparaenum}
+
+\end{document}
