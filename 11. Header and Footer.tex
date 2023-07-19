@@ -1,0 +1,25 @@
+\documentclass{article}
+
+% fancyhdr package is used for creating header and footer
+% for the document
+\usepackage{fancyhdr}
+% when we use "fancyhdr" package, we have to set our pagestyle
+% to fancy using the below command
+\pagestyle{fancy}
+
+% by default, there will appear a horizontal line below
+% the header. If this command is used, then the horizontal 
+% line vanishes.
+\renewcommand{\headrulewidth}{0 pt}
+
+\lhead{Left Header}
+\chead{Center Header}
+\rhead{Right Header}
+
+\lfoot{Left Footer}
+\cfoot{Center Footer}
+\rfoot{Right Footer}
+
+\begin{document}
+This is a testing document about headers and footers.
+\end{document}
