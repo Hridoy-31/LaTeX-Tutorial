@@ -1,0 +1,22 @@
+\documentclass{article}
+
+% "booktabs" package should be used when we want to add top and bottom line of a table
+\usepackage{booktabs}
+
+\begin{document}
+	\begin{tabular} {|c|c|c|}
+		% it will add a horizontal bar of size 2 pt at the top of the table
+		\toprule[2 pt]
+		\hline
+		Course Name & Credit & Students \\
+		\hline
+		Set Theory & 2.00 & 25 \\
+		\hline
+		Linear Algebra & 3.00 & 57 \\
+		\hline
+		Quantum Computing & 3.00 & 108 \\
+		\hline
+		% it will add a horizontal bar of size 2 pt at the bottom of the table
+		\bottomrule[2 pt]
+	\end{tabular}
+\end{document}
